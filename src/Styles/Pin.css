@@ -1,0 +1,24 @@
+.Pin {
+  width: 300px;
+  height: 500px;
+  margin: 1rem;
+}
+.Pin .Image {
+  width: 300px;
+  height: 400px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Pin .Image:hover {
+  transform: scale(1.2);
+}
+.Pin .Author {
+  background-color: #e6e6e6;
+  font-size: large;
+  border-radius: 15px;
+  text-align: center;
+}
+.Pin .Author h5 {
+  padding: 1rem;
+}/*# sourceMappingURL=Pin.css.map */
