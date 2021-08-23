@@ -1,15 +1,6 @@
-$author_div_color: rgb(230, 230, 230);
-$image_width: 300px;
-$image_height: 400px;
-$Pin_height: $image_height + 100px;
-
 .Pin {
-  width: $image_width;
-  height: $Pin_height;
   margin: 1rem;
   .Image {
-    width: 300px;
-    height: 400px;
     border-radius: 15px;
     cursor: pointer;
     transition: 0.3s;

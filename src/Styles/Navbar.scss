@@ -1,0 +1,72 @@
+$font-classic-color: black;
+$font-size: 16px;
+$minimal_width: 800px;
+
+.Nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  .Logo {
+    img {
+      margin-left: 2rem;
+      width: auto;
+      height: 100px;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    li {
+      float: right;
+      a {
+        text-align: center;
+        text-decoration: none;
+        color: $font-classic-color;
+        font-size: $font-size;
+        font-weight: bold;
+        padding: 8px;
+        margin: 1rem;
+      }
+      button {
+        margin-right: 3rem;
+        padding: 10px;
+        border: none;
+        border-radius: 30px;
+        font-size: $font-size;
+        font-weight: bold;
+      }
+    }
+    .Register {
+      background-color: #f7eeee;
+      &:hover {
+        background-color: #ccc5c5;
+      }
+    }
+    .Login {
+      background-color: red;
+      color: white;
+      &:hover {
+        background-color: rgb(214, 21, 21);
+      }
+    }
+  }
+}
+
+@media (max-width: $minimal_width) {
+  .Nav-bar {
+    flex-direction: column;
+    align-items: center;
+    .Logo {
+      margin: 2rem;
+    }
+    ul {
+      display: none;
+    }
+  }
+}
